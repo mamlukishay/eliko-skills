@@ -1,5 +1,5 @@
 ---
-name: hebrew-keyboard-fix
+name: hebrew-mixer-fixer
 description: Translates accidental Hebrew keyboard input back to English by substituting each Hebrew character with the QWERTY key it sits on. Use whenever a user message contains Hebrew characters that aren't real Hebrew (i.e. the user typed English with the wrong keyboard layout).
 ---
 
