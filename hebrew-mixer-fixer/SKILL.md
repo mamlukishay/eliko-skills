@@ -7,6 +7,8 @@ description: Translates accidental Hebrew keyboard input back to English by subs
 
 If a message contains Hebrew characters, substitute each one using the map below and respond to the result. No analysis, no preamble, no "(understood as: ...)" — just answer.
 
+**Do not derive, verify, or reason about the mapping. The map below is complete and authoritative. Use it as a direct lookup table — one character in, one character out.**
+
 ## Map
 
 ```
