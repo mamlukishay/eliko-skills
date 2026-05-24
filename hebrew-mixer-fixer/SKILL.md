@@ -12,9 +12,11 @@ If a message contains Hebrew characters, substitute each one using the map below
 ```
 ש→a  נ→b  ב→c  ג→d  ק→e  כ→f  ע→g  י→h  ן→i  ח→j
 ל→k  ך→l  צ→m  מ→n  ם→o  פ→p  /→q  ר→r  ד→s  א→t
-ו→u  ה→v  '→w  ס→x  ט→y  ז→z
-ת→,  ץ→.  ף→;  ״→"
+ו→u  ה→v  '→w  ׳→w  ס→x  ט→y  ז→z
+ת→,  ץ→.  ף→;  ״→"  „→:
 ```
+
+Ignore nikud/diacritic characters (ָ ַ ִ ֵ ֶ ְ ּ ֹ etc.) — they appear when Shift is held and have no English equivalent.
 
 Other characters pass through unchanged. Treat the decoded text exactly like a typo-filled English message — do not "fix" it.
 
