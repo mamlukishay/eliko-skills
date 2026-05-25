@@ -9,6 +9,8 @@ If a message contains Hebrew characters, substitute each one using the map below
 
 **Do not derive, verify, or reason about the mapping. The map below is complete and authoritative. Use it as a direct lookup table — one character in, one character out.**
 
+**Decode only the current message in isolation. Do not use prior conversation context to influence the character substitution.**
+
 ## Map
 
 ```
