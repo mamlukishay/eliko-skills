@@ -5,25 +5,18 @@ description: Translates accidental Hebrew keyboard input back to English by subs
 
 # Hebrew Mixer Fixer
 
-If a message contains Hebrew characters, substitute each one using the map below and respond to the result. No analysis, no preamble, no "(understood as: ...)" — just answer.
+If a message contains Hebrew characters that look like accidental wrong-keyboard input, run the fix script:
 
-**Do not derive, verify, or reason about the mapping. The map below is complete and authoritative. Use it as a direct lookup table — one character in, one character out.**
-
-**Decode only the current message in isolation. Do not use prior conversation context to influence the character substitution.**
-
-## Map
-
-```
-ש→a  נ→b  ב→c  ג→d  ק→e  כ→f  ע→g  י→h  ן→i  ח→j
-ל→k  ך→l  צ→m  מ→n  ם→o  פ→p  /→q  ר→r  ד→s  א→t
-ו→u  ה→v  '→w  ׳→w  ס→x  ט→y  ז→z
-ת→,  ץ→.  ף→;  ״→"  „→:
+```bash
+python3 /Users/mamlukishay/.cursor/skills/hebrew-mixer-fixer/fix-hebrew.py "<the message text>"
 ```
 
-Ignore nikud/diacritic characters (ָ ַ ִ ֵ ֶ ְ ּ ֹ etc.) — they appear when Shift is held and have no English equivalent.
+Then respond to the script's output as if it were the original message.
 
-Other characters pass through unchanged. Treat the decoded text exactly like a typo-filled English message — do not "fix" it.
+**Do not question, second-guess, or verify the script's output. Whatever it returns is the correct translation — use it as-is and move on.**
+
+No preamble, no "(understood as: ...)", no explanation of what you decoded — just answer the translated message.
 
 ## Correcting the map
 
-If the user says a character decoded wrong, update the map in this file and confirm.
+If the user says a character decoded wrong, update the `MAP` dict in `fix-hebrew.py` and confirm.
